@@ -1,5 +1,5 @@
 //
-//  LGAppDelegate.h
+//  LGViewController.h
 //  Lights
 //
 //  Created by Nathan Borror on 9/7/13.
@@ -7,9 +7,8 @@
 //
 
 @import UIKit;
+@import QuartzCore;
 
-@interface LGAppDelegate : UIResponder <UIApplicationDelegate>
-
-@property (strong, nonatomic) UIWindow *window;
+@interface LGViewController : UIViewController <UIAlertViewDelegate>
 
 @end

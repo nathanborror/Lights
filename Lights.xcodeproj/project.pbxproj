@@ -19,6 +19,13 @@
 		D800EF7717DBD5A400573B68 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D800EF5F17DBD5A400573B68 /* UIKit.framework */; };
 		D800EF7F17DBD5A400573B68 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D800EF7D17DBD5A400573B68 /* InfoPlist.strings */; };
 		D800EF8117DBD5A400573B68 /* LightsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D800EF8017DBD5A400573B68 /* LightsTests.m */; };
+		D800EF8C17DBD5CE00573B68 /* LGViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D800EF8B17DBD5CE00573B68 /* LGViewController.m */; };
+		D800EF9F17DBDB3D00573B68 /* libicucore.A.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D800EF9E17DBDB3D00573B68 /* libicucore.A.dylib */; };
+		D800EFA117DBDB4600573B68 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D800EFA017DBDB4600573B68 /* CFNetwork.framework */; };
+		D800EFA317DBDB4C00573B68 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D800EFA217DBDB4C00573B68 /* Security.framework */; };
+		D800EFA717DBE4BC00573B68 /* NSString+MD5.m in Sources */ = {isa = PBXBuildFile; fileRef = D800EFA617DBE4BC00573B68 /* NSString+MD5.m */; };
+		D8F1D9EF17DC63A0003C14A3 /* LGConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = D8F1D9EE17DC63A0003C14A3 /* LGConnection.m */; };
+		D8F1D9F217DD12FE003C14A3 /* UIBigSwitch.m in Sources */ = {isa = PBXBuildFile; fileRef = D8F1D9F117DD12FE003C14A3 /* UIBigSwitch.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +55,17 @@
 		D800EF7C17DBD5A400573B68 /* LightsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LightsTests-Info.plist"; sourceTree = "<group>"; };
 		D800EF7E17DBD5A400573B68 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D800EF8017DBD5A400573B68 /* LightsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LightsTests.m; sourceTree = "<group>"; };
+		D800EF8A17DBD5CE00573B68 /* LGViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGViewController.h; sourceTree = "<group>"; };
+		D800EF8B17DBD5CE00573B68 /* LGViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGViewController.m; sourceTree = "<group>"; };
+		D800EF9E17DBDB3D00573B68 /* libicucore.A.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.A.dylib; path = usr/lib/libicucore.A.dylib; sourceTree = SDKROOT; };
+		D800EFA017DBDB4600573B68 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		D800EFA217DBDB4C00573B68 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		D800EFA517DBE4BC00573B68 /* NSString+MD5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MD5.h"; sourceTree = "<group>"; };
+		D800EFA617DBE4BC00573B68 /* NSString+MD5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MD5.m"; sourceTree = "<group>"; };
+		D8F1D9ED17DC63A0003C14A3 /* LGConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGConnection.h; sourceTree = "<group>"; };
+		D8F1D9EE17DC63A0003C14A3 /* LGConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGConnection.m; sourceTree = "<group>"; };
+		D8F1D9F017DD12FE003C14A3 /* UIBigSwitch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIBigSwitch.h; sourceTree = "<group>"; };
+		D8F1D9F117DD12FE003C14A3 /* UIBigSwitch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIBigSwitch.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +73,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D800EFA317DBDB4C00573B68 /* Security.framework in Frameworks */,
+				D800EFA117DBDB4600573B68 /* CFNetwork.framework in Frameworks */,
+				D800EF9F17DBDB3D00573B68 /* libicucore.A.dylib in Frameworks */,
 				D800EF5E17DBD5A400573B68 /* CoreGraphics.framework in Frameworks */,
 				D800EF6017DBD5A400573B68 /* UIKit.framework in Frameworks */,
 				D800EF5C17DBD5A400573B68 /* Foundation.framework in Frameworks */,
@@ -96,6 +117,9 @@
 		D800EF5A17DBD5A400573B68 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D800EF9E17DBDB3D00573B68 /* libicucore.A.dylib */,
+				D800EFA217DBDB4C00573B68 /* Security.framework */,
+				D800EFA017DBDB4600573B68 /* CFNetwork.framework */,
 				D800EF5B17DBD5A400573B68 /* Foundation.framework */,
 				D800EF5D17DBD5A400573B68 /* CoreGraphics.framework */,
 				D800EF5F17DBD5A400573B68 /* UIKit.framework */,
@@ -107,10 +131,16 @@
 		D800EF6117DBD5A400573B68 /* Lights */ = {
 			isa = PBXGroup;
 			children = (
+				D8F1D9F317DD620A003C14A3 /* UI Elements */,
+				D800EFA417DBE4A900573B68 /* Categories */,
 				D800EF6A17DBD5A400573B68 /* LGAppDelegate.h */,
 				D800EF6B17DBD5A400573B68 /* LGAppDelegate.m */,
 				D800EF6D17DBD5A400573B68 /* Images.xcassets */,
 				D800EF6217DBD5A400573B68 /* Supporting Files */,
+				D800EF8A17DBD5CE00573B68 /* LGViewController.h */,
+				D800EF8B17DBD5CE00573B68 /* LGViewController.m */,
+				D8F1D9ED17DC63A0003C14A3 /* LGConnection.h */,
+				D8F1D9EE17DC63A0003C14A3 /* LGConnection.m */,
 			);
 			path = Lights;
 			sourceTree = "<group>";
@@ -142,6 +172,24 @@
 				D800EF7D17DBD5A400573B68 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D800EFA417DBE4A900573B68 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				D800EFA517DBE4BC00573B68 /* NSString+MD5.h */,
+				D800EFA617DBE4BC00573B68 /* NSString+MD5.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+		D8F1D9F317DD620A003C14A3 /* UI Elements */ = {
+			isa = PBXGroup;
+			children = (
+				D8F1D9F017DD12FE003C14A3 /* UIBigSwitch.h */,
+				D8F1D9F117DD12FE003C14A3 /* UIBigSwitch.m */,
+			);
+			name = "UI Elements";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -242,6 +290,10 @@
 			files = (
 				D800EF6817DBD5A400573B68 /* main.m in Sources */,
 				D800EF6C17DBD5A400573B68 /* LGAppDelegate.m in Sources */,
+				D8F1D9EF17DC63A0003C14A3 /* LGConnection.m in Sources */,
+				D800EF8C17DBD5CE00573B68 /* LGViewController.m in Sources */,
+				D8F1D9F217DD12FE003C14A3 /* UIBigSwitch.m in Sources */,
+				D800EFA717DBE4BC00573B68 /* NSString+MD5.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -356,6 +408,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/nathan/Dropbox/Work/Personal/Lights,
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Lights/Lights-Prefix.pch";
 				INFOPLIST_FILE = "Lights/Lights-Info.plist";
@@ -369,6 +425,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/nathan/Dropbox/Work/Personal/Lights,
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Lights/Lights-Prefix.pch";
 				INFOPLIST_FILE = "Lights/Lights-Info.plist";
@@ -436,6 +496,7 @@
 				D800EF8617DBD5A400573B68 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D800EF8717DBD5A400573B68 /* Build configuration list for PBXNativeTarget "LightsTests" */ = {
 			isa = XCConfigurationList;
@@ -444,6 +505,7 @@
 				D800EF8917DBD5A400573B68 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
