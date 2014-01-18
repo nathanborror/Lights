@@ -9,7 +9,7 @@
 #import "UIBigSwitch.h"
 
 static const CGFloat kBackgroundAnimationDuration = .75;
-static const CGFloat kBorderWidth = 2.5;
+static const CGFloat kBorderWidth = 3;
 
 @implementation UIBigSwitch {
   UIView *background;
@@ -26,32 +26,27 @@ static const CGFloat kBorderWidth = 2.5;
   if (self = [super initWithFrame:frame]) {
     _on = NO;
 
-    background = [[UIView alloc] initWithFrame:CGRectMake(0, 0, CGRectGetWidth(self.bounds), CGRectGetHeight(self.bounds))];
-    [background setBackgroundColor:[UIColor whiteColor]];
-    [background.layer setBorderColor:[UIColor colorWithWhite:.9 alpha:1].CGColor];
-    [background.layer setBorderWidth:kBorderWidth];
-    [background.layer setCornerRadius:CGRectGetWidth(background.bounds)/2];
-    [self addSubview:background];
-
     mask = [[UIView alloc] initWithFrame:CGRectMake(0, 0, CGRectGetWidth(self.bounds), CGRectGetHeight(self.bounds))];
-    [mask setBackgroundColor:[UIColor colorWithWhite:.9 alpha:1]];
+    [mask setBackgroundColor:[UIColor whiteColor]];
     [mask.layer setCornerRadius:CGRectGetWidth(mask.bounds)/2];
     [mask.layer setAffineTransform:CGAffineTransformMakeScale(0, 0)];
     [self addSubview:mask];
 
-    thumb = [[UIView alloc] initWithFrame:CGRectMake(kBorderWidth, kBorderWidth, CGRectGetWidth(self.bounds)-(kBorderWidth*2), CGRectGetWidth(self.bounds)-(kBorderWidth*2))];
+    background = [[UIView alloc] initWithFrame:CGRectMake(0, 0, CGRectGetWidth(self.bounds), CGRectGetHeight(self.bounds))];
+    [background.layer setBorderColor:[UIColor whiteColor].CGColor];
+    [background.layer setBorderWidth:kBorderWidth];
+    [background.layer setCornerRadius:CGRectGetWidth(background.bounds)/2];
+    [self addSubview:background];
+
+    thumb = [[UIView alloc] initWithFrame:CGRectMake(0, 0, CGRectGetWidth(self.bounds)-(kBorderWidth*2), CGRectGetWidth(self.bounds)-(kBorderWidth*2))];
     [thumb setBackgroundColor:[UIColor whiteColor]];
     [thumb.layer setCornerRadius:CGRectGetWidth(thumb.bounds)/2];
-    [thumb.layer setBorderColor:[UIColor colorWithWhite:0 alpha:.1].CGColor];
-    [thumb.layer setBorderWidth:1];
-    [thumb.layer setShadowColor:[UIColor blackColor].CGColor];
-    [thumb.layer setShadowOffset:CGSizeMake(0, 10)];
-    [thumb.layer setShadowOpacity:.1];
-    [thumb.layer setShadowRadius:5];
+    [thumb.layer setBorderColor:[UIColor blackColor].CGColor];
+    [thumb.layer setBorderWidth:kBorderWidth/2];
     [self addSubview:thumb];
 
-    thumbOff = CGPointMake(thumb.center.x, (CGRectGetHeight(self.bounds)-CGRectGetHeight(thumb.bounds)/2)-kBorderWidth);
-    thumbOn = CGPointMake(thumb.center.x, (CGRectGetHeight(thumb.bounds)/2)+kBorderWidth);
+    thumbOff = CGPointMake(background.center.x, (CGRectGetHeight(self.bounds)-CGRectGetHeight(thumb.bounds)/2)-kBorderWidth);
+    thumbOn = CGPointMake(background.center.x, (CGRectGetHeight(thumb.bounds)/2)+kBorderWidth);
 
     [thumb setCenter:thumbOff];
   }
@@ -77,18 +72,14 @@ static const CGFloat kBorderWidth = 2.5;
   if ([self pointInside:point withEvent:nil]) {
     if (_on) {
       _on = NO;
-      [background.layer setBorderColor:[UIColor colorWithWhite:.9 alpha:1].CGColor];
-      [mask setBackgroundColor:[UIColor colorWithWhite:.9 alpha:1]];
     } else {
       _on = YES;
-      [background.layer setBorderColor:[UIColor colorWithRed:.26 green:.84 blue:.32 alpha:1].CGColor];
-      [mask setBackgroundColor:[UIColor colorWithRed:.26 green:.84 blue:.32 alpha:1]];
     }
     [self sendActionsForControlEvents:UIControlEventTouchUpInside];
   }
 
   // Animate Thumb
-  [UIView animateWithDuration:.9 delay:0 usingSpringWithDamping:.65 initialSpringVelocity:.2 options:UIViewAnimationOptionCurveLinear animations:^{
+  [UIView animateWithDuration:.8 delay:0 usingSpringWithDamping:.7 initialSpringVelocity:.2 options:UIViewAnimationOptionCurveLinear animations:^{
     [thumb setFrame:CGRectMake(CGRectGetMinX(thumb.frame), CGRectGetMinY(thumb.frame), CGRectGetWidth(thumb.bounds), CGRectGetHeight(thumb.bounds)-20)];
     if (_on) {
       [thumb setCenter:thumbOn];

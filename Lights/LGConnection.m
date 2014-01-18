@@ -10,7 +10,10 @@
 
 static NSMutableArray *sharedConnectionList = nil;
 
-@implementation LGConnection
+@implementation LGConnection {
+  NSURLConnection *_internalConnection;
+  NSMutableData *_container;
+}
 
 - (id)initWithRequest:(NSURLRequest *)req completion:(void (^)(id, NSError *))block
 {
@@ -23,8 +26,8 @@ static NSMutableArray *sharedConnectionList = nil;
 
 - (void)start
 {
-  container = [[NSMutableData alloc] init];
-  internalConnection = [[NSURLConnection alloc] initWithRequest:self.request delegate:self startImmediately:YES];
+  _container = [[NSMutableData alloc] init];
+  _internalConnection = [[NSURLConnection alloc] initWithRequest:self.request delegate:self startImmediately:YES];
 
   if (!sharedConnectionList) {
     sharedConnectionList = [[NSMutableArray alloc] init];
@@ -36,22 +39,13 @@ static NSMutableArray *sharedConnectionList = nil;
 
 - (void)connection:(NSURLConnection *)connection didReceiveData:(NSData *)data
 {
-  [container appendData:data];
+  [_container appendData:data];
 }
 
 - (void)connectionDidFinishLoading:(NSURLConnection *)connection
 {
-//  id rootObject = nil;
-//  if (_envelope) {
-//    NSXMLParser *parser = [[NSXMLParser alloc] initWithData:container];
-//
-//    [parser setDelegate:[self envelope]];
-//    [parser parse];
-//    rootObject = [self envelope];
-//  }
-
   if (_completionBlock) {
-    _completionBlock(container, nil);
+    _completionBlock(_container, nil);
   }
 
   [sharedConnectionList removeObject:self];

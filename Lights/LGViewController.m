@@ -11,16 +11,16 @@
 #import "UIBigSwitch.h"
 
 @implementation LGViewController {
-  NSString *stationIp;
-  UIBigSwitch *bigSwitch;
-  BOOL paired;
-  UIAlertView *pairAlert;
+  NSString *_stationIp;
+  UIBigSwitch *_bigSwitch;
+  BOOL _paired;
+  UIAlertView *_pairAlert;
 }
 
 - (id)init
 {
   if (self = [super init]) {
-    stationIp = @"10.0.1.2";
+    _stationIp = @"10.0.1.2";
   }
   return self;
 }
@@ -29,11 +29,11 @@
 {
   [super viewDidLoad];
 
-  bigSwitch = [[UIBigSwitch alloc] initWithFrame:CGRectMake((CGRectGetWidth(self.view.bounds)/2)-64, (CGRectGetHeight(self.view.bounds)/2)-100, 128, 200)];
-  [bigSwitch addTarget:self action:@selector(switchChange:) forControlEvents:UIControlEventTouchUpInside];
-  [self.view addSubview:bigSwitch];
+  _bigSwitch = [[UIBigSwitch alloc] initWithFrame:CGRectMake((CGRectGetWidth(self.view.bounds)/2)-64, (CGRectGetHeight(self.view.bounds)/2)-100, 128, 200)];
+  [_bigSwitch addTarget:self action:@selector(switchChange:) forControlEvents:UIControlEventTouchUpInside];
+  [self.view addSubview:_bigSwitch];
 
-  pairAlert = [[UIAlertView alloc] initWithTitle:@"Pair with Hue" message:@"Press the pairing button on your Hue hub then press OK." delegate:self cancelButtonTitle:nil otherButtonTitles:@"Okay", nil];
+  _pairAlert = [[UIAlertView alloc] initWithTitle:@"Pair with Hue" message:@"Press the pairing button on your Hue hub then press OK." delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:@"Okay", nil];
 
   [self refresh];
 }
@@ -41,7 +41,7 @@
 - (void)refresh
 {
   NSString *requestBody = @"{\"devicetype\":\"Lights App\", \"username\":\"newdeveloper\"}";
-  NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"http://%@/api", stationIp]];
+  NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"http://%@/api", _stationIp]];
   NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
   [request setHTTPMethod:@"POST"];
   [request setHTTPBody:[requestBody dataUsingEncoding:NSUTF8StringEncoding]];
@@ -53,14 +53,14 @@
 
     for (NSDictionary *dict in json) {
       if (dict[@"error"][@"type"]) {
-        paired = NO;
+        _paired = NO;
       } else {
-        paired = YES;
+        _paired = YES;
       }
     }
 
-    if (!paired) {
-      [pairAlert show];
+    if (!_paired) {
+//      [_pairAlert show];
     }
   }];
 
@@ -77,7 +77,7 @@
     requestBody = @"{\"on\":false}";
   }
 
-  NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"http://%@/api/newdeveloper/groups/0/action", stationIp]];
+  NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"http://%@/api/newdeveloper/groups/0/action", _stationIp]];
   NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
   [request setHTTPMethod:@"PUT"];
   [request setHTTPBody:[requestBody dataUsingEncoding:NSUTF8StringEncoding]];
@@ -94,7 +94,9 @@
 
 - (void)alertView:(UIAlertView *)alertView didDismissWithButtonIndex:(NSInteger)buttonIndex
 {
-  [self refresh];
+  if (buttonIndex) {
+    [self refresh];
+  }
 }
 
 @end

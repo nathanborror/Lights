@@ -9,10 +9,6 @@
 @import Foundation;
 
 @interface LGConnection : NSObject <NSURLConnectionDelegate, NSURLConnectionDataDelegate>
-{
-  NSURLConnection *internalConnection;
-  NSMutableData *container;
-}
 
 @property (nonatomic, copy) NSURLRequest *request;
 @property (nonatomic, copy) void (^completionBlock)(id obj, NSError *error);

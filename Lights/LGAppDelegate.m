@@ -13,13 +13,13 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-  self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+  _window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
 
   LGViewController *viewController = [[LGViewController alloc] init];
-  [self.window setRootViewController:viewController];
+  [_window setRootViewController:viewController];
 
-  [self.window setBackgroundColor:[UIColor whiteColor]];
-  [self.window makeKeyAndVisible];
+  [_window setBackgroundColor:[UIColor blackColor]];
+  [_window makeKeyAndVisible];
   return YES;
 }
 
