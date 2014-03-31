@@ -7,22 +7,12 @@
 //
 
 #import "LGViewController.h"
-#import "LGConnection.h"
 #import "UIBigSwitch.h"
 
 @implementation LGViewController {
-  NSString *_stationIp;
   UIBigSwitch *_bigSwitch;
   BOOL _paired;
   UIAlertView *_pairAlert;
-}
-
-- (id)init
-{
-  if (self = [super init]) {
-    _stationIp = @"10.0.1.2";
-  }
-  return self;
 }
 
 - (void)viewDidLoad
@@ -40,15 +30,20 @@
 
 - (void)refresh
 {
+  NSString *ip = [[NSUserDefaults standardUserDefaults] objectForKey:@"ip_preference"];
   NSString *requestBody = @"{\"devicetype\":\"Lights App\", \"username\":\"newdeveloper\"}";
-  NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"http://%@/api", _stationIp]];
+  NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"http://%@/api", ip]];
   NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
   [request setHTTPMethod:@"POST"];
   [request setHTTPBody:[requestBody dataUsingEncoding:NSUTF8StringEncoding]];
 
-  LGConnection *connection = [[LGConnection alloc] initWithRequest:request completion:^(id obj, NSError *error) {
-    NSError *jsonError;
-    NSDictionary *json = [NSJSONSerialization JSONObjectWithData:(NSMutableData *)obj options:kNilOptions error:&jsonError];
+  NSURLSession *session = [NSURLSession sharedSession];
+  NSURLSessionDataTask *task = [session dataTaskWithRequest:request completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
+
+    NSHTTPURLResponse *httpResponse = (NSHTTPURLResponse *)response;
+    if (httpResponse.statusCode != 200) return;
+
+    NSDictionary *json = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:&error];
     NSLog(@"JSON: %@", json);
 
     for (NSDictionary *dict in json) {
@@ -63,8 +58,7 @@
 //      [_pairAlert show];
     }
   }];
-
-  [connection start];
+  [task resume];
 }
 
 - (void)switchChange:(UIBigSwitch *)aSwitch
@@ -77,17 +71,18 @@
     requestBody = @"{\"on\":false}";
   }
 
-  NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"http://%@/api/newdeveloper/groups/0/action", _stationIp]];
+  NSString *ip = [[NSUserDefaults standardUserDefaults] objectForKey:@"ip_preference"];
+  NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"http://%@/api/newdeveloper/groups/0/action", ip]];
   NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
   [request setHTTPMethod:@"PUT"];
   [request setHTTPBody:[requestBody dataUsingEncoding:NSUTF8StringEncoding]];
 
-  LGConnection *connection = [[LGConnection alloc] initWithRequest:request completion:^(id obj, NSError *error) {
-    NSString *output = [[NSString alloc] initWithData:(NSMutableData *)obj encoding:NSUTF8StringEncoding];
+  NSURLSession *session = [NSURLSession sharedSession];
+  NSURLSessionDataTask *task = [session dataTaskWithRequest:request completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
+    NSString *output = [[NSString alloc] initWithData:(NSMutableData *)data encoding:NSUTF8StringEncoding];
     NSLog(@"SWITCH: %@", output);
   }];
-
-  [connection start];
+  [task resume];
 }
 
 #pragma mark - UIAlertViewDelegate

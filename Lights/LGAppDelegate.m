@@ -15,6 +15,10 @@
 {
   _window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
 
+  NSDictionary *appDefaults = [NSDictionary dictionaryWithObject:@"10.0.1.3" forKey:@"ip_preference"];
+  [[NSUserDefaults standardUserDefaults] registerDefaults:appDefaults];
+  [[NSUserDefaults standardUserDefaults] synchronize];
+
   LGViewController *viewController = [[LGViewController alloc] init];
   [_window setRootViewController:viewController];
 
