@@ -23,7 +23,6 @@
 		D800EF9F17DBDB3D00573B68 /* libicucore.A.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D800EF9E17DBDB3D00573B68 /* libicucore.A.dylib */; };
 		D800EFA117DBDB4600573B68 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D800EFA017DBDB4600573B68 /* CFNetwork.framework */; };
 		D800EFA317DBDB4C00573B68 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D800EFA217DBDB4C00573B68 /* Security.framework */; };
-		D800EFA717DBE4BC00573B68 /* NSString+MD5.m in Sources */ = {isa = PBXBuildFile; fileRef = D800EFA617DBE4BC00573B68 /* NSString+MD5.m */; };
 		D8F1D9EF17DC63A0003C14A3 /* LGConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = D8F1D9EE17DC63A0003C14A3 /* LGConnection.m */; };
 		D8F1D9F217DD12FE003C14A3 /* UIBigSwitch.m in Sources */ = {isa = PBXBuildFile; fileRef = D8F1D9F117DD12FE003C14A3 /* UIBigSwitch.m */; };
 /* End PBXBuildFile section */
@@ -60,8 +59,6 @@
 		D800EF9E17DBDB3D00573B68 /* libicucore.A.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.A.dylib; path = usr/lib/libicucore.A.dylib; sourceTree = SDKROOT; };
 		D800EFA017DBDB4600573B68 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		D800EFA217DBDB4C00573B68 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
-		D800EFA517DBE4BC00573B68 /* NSString+MD5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MD5.h"; sourceTree = "<group>"; };
-		D800EFA617DBE4BC00573B68 /* NSString+MD5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MD5.m"; sourceTree = "<group>"; };
 		D8F1D9ED17DC63A0003C14A3 /* LGConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGConnection.h; sourceTree = "<group>"; };
 		D8F1D9EE17DC63A0003C14A3 /* LGConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGConnection.m; sourceTree = "<group>"; };
 		D8F1D9F017DD12FE003C14A3 /* UIBigSwitch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIBigSwitch.h; sourceTree = "<group>"; };
@@ -177,8 +174,6 @@
 		D800EFA417DBE4A900573B68 /* Categories */ = {
 			isa = PBXGroup;
 			children = (
-				D800EFA517DBE4BC00573B68 /* NSString+MD5.h */,
-				D800EFA617DBE4BC00573B68 /* NSString+MD5.m */,
 			);
 			name = Categories;
 			sourceTree = "<group>";
@@ -293,7 +288,6 @@
 				D8F1D9EF17DC63A0003C14A3 /* LGConnection.m in Sources */,
 				D800EF8C17DBD5CE00573B68 /* LGViewController.m in Sources */,
 				D8F1D9F217DD12FE003C14A3 /* UIBigSwitch.m in Sources */,
-				D800EFA717DBE4BC00573B68 /* NSString+MD5.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
