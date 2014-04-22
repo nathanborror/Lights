@@ -7,12 +7,14 @@
 //
 
 #import "LGViewController.h"
+#import "LGMapViewController.h"
 #import "UIBigSwitch.h"
 
 @implementation LGViewController {
   UIBigSwitch *_bigSwitch;
   BOOL _paired;
   UIAlertView *_pairAlert;
+  UIButton *_geoFenceButton;
 }
 
 - (void)viewDidLoad
@@ -26,6 +28,16 @@
   _pairAlert = [[UIAlertView alloc] initWithTitle:@"Pair with Hue" message:@"Press the pairing button on your Hue hub then press OK." delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:@"Okay", nil];
 
   [self refresh];
+
+  _geoFenceButton = [[UIButton alloc] initWithFrame:CGRectMake(16, CGRectGetHeight(self.view.bounds)-(16+44), 44, 44)];
+  [_geoFenceButton addTarget:self action:@selector(setGeoFence) forControlEvents:UIControlEventTouchUpInside];
+  [_geoFenceButton setImage:[UIImage imageNamed:@"GeoFenceButton"] forState:UIControlStateNormal];
+  [self.view addSubview:_geoFenceButton];
+}
+
+- (UIStatusBarStyle)preferredStatusBarStyle
+{
+  return UIStatusBarStyleLightContent;
 }
 
 - (void)refresh
@@ -78,11 +90,15 @@
   [request setHTTPBody:[requestBody dataUsingEncoding:NSUTF8StringEncoding]];
 
   NSURLSession *session = [NSURLSession sharedSession];
-  NSURLSessionDataTask *task = [session dataTaskWithRequest:request completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
-    NSString *output = [[NSString alloc] initWithData:(NSMutableData *)data encoding:NSUTF8StringEncoding];
-    NSLog(@"SWITCH: %@", output);
-  }];
+  NSURLSessionDataTask *task = [session dataTaskWithRequest:request completionHandler:nil];
   [task resume];
+}
+
+- (void)setGeoFence
+{
+  LGMapViewController *viewController = [[LGMapViewController alloc] init];
+  UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:viewController];
+  [self presentViewController:navController animated:YES completion:nil];
 }
 
 #pragma mark - UIAlertViewDelegate

@@ -23,7 +23,13 @@
 		D800EF9F17DBDB3D00573B68 /* libicucore.A.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D800EF9E17DBDB3D00573B68 /* libicucore.A.dylib */; };
 		D800EFA117DBDB4600573B68 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D800EFA017DBDB4600573B68 /* CFNetwork.framework */; };
 		D800EFA317DBDB4C00573B68 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D800EFA217DBDB4C00573B68 /* Security.framework */; };
-		D8F1D9EF17DC63A0003C14A3 /* LGConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = D8F1D9EE17DC63A0003C14A3 /* LGConnection.m */; };
+		D82028EA18FCB7A20032DD05 /* LGPlotter.m in Sources */ = {isa = PBXBuildFile; fileRef = D82028E918FCB7A20032DD05 /* LGPlotter.m */; };
+		D82028EE18FCB9870032DD05 /* NBDirectionGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = D82028ED18FCB9870032DD05 /* NBDirectionGestureRecognizer.m */; };
+		D85A91C318E89CC90042C630 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D85A91C218E89CC90042C630 /* Settings.bundle */; };
+		D867723318FB5B16001908F7 /* LGOverlay.m in Sources */ = {isa = PBXBuildFile; fileRef = D867723218FB5B16001908F7 /* LGOverlay.m */; };
+		D8936C1418E35FEC007FF135 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8936C1318E35FEC007FF135 /* CoreLocation.framework */; };
+		D8936C1718E4AEF2007FF135 /* LGMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8936C1618E4AEF2007FF135 /* LGMapViewController.m */; };
+		D8B8964818FB3BFD00B95B80 /* LGLocationStore.m in Sources */ = {isa = PBXBuildFile; fileRef = D8B8964718FB3BFD00B95B80 /* LGLocationStore.m */; };
 		D8F1D9F217DD12FE003C14A3 /* UIBigSwitch.m in Sources */ = {isa = PBXBuildFile; fileRef = D8F1D9F117DD12FE003C14A3 /* UIBigSwitch.m */; };
 /* End PBXBuildFile section */
 
@@ -59,8 +65,18 @@
 		D800EF9E17DBDB3D00573B68 /* libicucore.A.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.A.dylib; path = usr/lib/libicucore.A.dylib; sourceTree = SDKROOT; };
 		D800EFA017DBDB4600573B68 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		D800EFA217DBDB4C00573B68 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
-		D8F1D9ED17DC63A0003C14A3 /* LGConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGConnection.h; sourceTree = "<group>"; };
-		D8F1D9EE17DC63A0003C14A3 /* LGConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGConnection.m; sourceTree = "<group>"; };
+		D82028E818FCB7A20032DD05 /* LGPlotter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGPlotter.h; sourceTree = "<group>"; };
+		D82028E918FCB7A20032DD05 /* LGPlotter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGPlotter.m; sourceTree = "<group>"; };
+		D82028EC18FCB9870032DD05 /* NBDirectionGestureRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NBDirectionGestureRecognizer.h; sourceTree = "<group>"; };
+		D82028ED18FCB9870032DD05 /* NBDirectionGestureRecognizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NBDirectionGestureRecognizer.m; sourceTree = "<group>"; };
+		D85A91C218E89CC90042C630 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		D867723118FB5B16001908F7 /* LGOverlay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGOverlay.h; sourceTree = "<group>"; };
+		D867723218FB5B16001908F7 /* LGOverlay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGOverlay.m; sourceTree = "<group>"; };
+		D8936C1318E35FEC007FF135 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		D8936C1518E4AEF2007FF135 /* LGMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGMapViewController.h; sourceTree = "<group>"; };
+		D8936C1618E4AEF2007FF135 /* LGMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGMapViewController.m; sourceTree = "<group>"; };
+		D8B8964618FB3BFD00B95B80 /* LGLocationStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGLocationStore.h; sourceTree = "<group>"; };
+		D8B8964718FB3BFD00B95B80 /* LGLocationStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGLocationStore.m; sourceTree = "<group>"; };
 		D8F1D9F017DD12FE003C14A3 /* UIBigSwitch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIBigSwitch.h; sourceTree = "<group>"; };
 		D8F1D9F117DD12FE003C14A3 /* UIBigSwitch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIBigSwitch.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -70,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D8936C1418E35FEC007FF135 /* CoreLocation.framework in Frameworks */,
 				D800EFA317DBDB4C00573B68 /* Security.framework in Frameworks */,
 				D800EFA117DBDB4600573B68 /* CFNetwork.framework in Frameworks */,
 				D800EF9F17DBDB3D00573B68 /* libicucore.A.dylib in Frameworks */,
@@ -114,6 +131,7 @@
 		D800EF5A17DBD5A400573B68 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D8936C1318E35FEC007FF135 /* CoreLocation.framework */,
 				D800EF9E17DBDB3D00573B68 /* libicucore.A.dylib */,
 				D800EFA217DBDB4C00573B68 /* Security.framework */,
 				D800EFA017DBDB4600573B68 /* CFNetwork.framework */,
@@ -128,16 +146,18 @@
 		D800EF6117DBD5A400573B68 /* Lights */ = {
 			isa = PBXGroup;
 			children = (
+				D82028EB18FCB9690032DD05 /* NBKit */,
 				D8F1D9F317DD620A003C14A3 /* UI Elements */,
-				D800EFA417DBE4A900573B68 /* Categories */,
 				D800EF6A17DBD5A400573B68 /* LGAppDelegate.h */,
 				D800EF6B17DBD5A400573B68 /* LGAppDelegate.m */,
 				D800EF6D17DBD5A400573B68 /* Images.xcassets */,
 				D800EF6217DBD5A400573B68 /* Supporting Files */,
 				D800EF8A17DBD5CE00573B68 /* LGViewController.h */,
 				D800EF8B17DBD5CE00573B68 /* LGViewController.m */,
-				D8F1D9ED17DC63A0003C14A3 /* LGConnection.h */,
-				D8F1D9EE17DC63A0003C14A3 /* LGConnection.m */,
+				D8936C1518E4AEF2007FF135 /* LGMapViewController.h */,
+				D8936C1618E4AEF2007FF135 /* LGMapViewController.m */,
+				D8B8964618FB3BFD00B95B80 /* LGLocationStore.h */,
+				D8B8964718FB3BFD00B95B80 /* LGLocationStore.m */,
 			);
 			path = Lights;
 			sourceTree = "<group>";
@@ -146,6 +166,7 @@
 			isa = PBXGroup;
 			children = (
 				D800EF6317DBD5A400573B68 /* Lights-Info.plist */,
+				D85A91C218E89CC90042C630 /* Settings.bundle */,
 				D800EF6417DBD5A400573B68 /* InfoPlist.strings */,
 				D800EF6717DBD5A400573B68 /* main.m */,
 				D800EF6917DBD5A400573B68 /* Lights-Prefix.pch */,
@@ -171,11 +192,13 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		D800EFA417DBE4A900573B68 /* Categories */ = {
+		D82028EB18FCB9690032DD05 /* NBKit */ = {
 			isa = PBXGroup;
 			children = (
+				D82028EC18FCB9870032DD05 /* NBDirectionGestureRecognizer.h */,
+				D82028ED18FCB9870032DD05 /* NBDirectionGestureRecognizer.m */,
 			);
-			name = Categories;
+			name = NBKit;
 			sourceTree = "<group>";
 		};
 		D8F1D9F317DD620A003C14A3 /* UI Elements */ = {
@@ -183,6 +206,10 @@
 			children = (
 				D8F1D9F017DD12FE003C14A3 /* UIBigSwitch.h */,
 				D8F1D9F117DD12FE003C14A3 /* UIBigSwitch.m */,
+				D867723118FB5B16001908F7 /* LGOverlay.h */,
+				D867723218FB5B16001908F7 /* LGOverlay.m */,
+				D82028E818FCB7A20032DD05 /* LGPlotter.h */,
+				D82028E918FCB7A20032DD05 /* LGPlotter.m */,
 			);
 			name = "UI Elements";
 			sourceTree = "<group>";
@@ -264,6 +291,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D800EF6617DBD5A400573B68 /* InfoPlist.strings in Resources */,
+				D85A91C318E89CC90042C630 /* Settings.bundle in Resources */,
 				D800EF6E17DBD5A400573B68 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -284,10 +312,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				D800EF6817DBD5A400573B68 /* main.m in Sources */,
+				D82028EA18FCB7A20032DD05 /* LGPlotter.m in Sources */,
 				D800EF6C17DBD5A400573B68 /* LGAppDelegate.m in Sources */,
-				D8F1D9EF17DC63A0003C14A3 /* LGConnection.m in Sources */,
 				D800EF8C17DBD5CE00573B68 /* LGViewController.m in Sources */,
+				D867723318FB5B16001908F7 /* LGOverlay.m in Sources */,
 				D8F1D9F217DD12FE003C14A3 /* UIBigSwitch.m in Sources */,
+				D82028EE18FCB9870032DD05 /* NBDirectionGestureRecognizer.m in Sources */,
+				D8936C1718E4AEF2007FF135 /* LGMapViewController.m in Sources */,
+				D8B8964818FB3BFD00B95B80 /* LGLocationStore.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
