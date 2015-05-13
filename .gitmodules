@@ -1,0 +1,6 @@
+[submodule "Vendor/Alamofire"]
+	path = Vendor/Alamofire
+	url = git@github.com:Alamofire/Alamofire.git
+[submodule "Vendor/NBKit"]
+	path = Vendor/NBKit
+	url = https://github.com/nathanborror/NBKit.git

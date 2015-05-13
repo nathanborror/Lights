@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0500"
+   LastUpgradeVersion = "0620"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,9 +14,37 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "D800EF5717DBD5A400573B68"
+               BlueprintIdentifier = "D802B9341A80564D00DA11A8"
                BuildableName = "Lights.app"
                BlueprintName = "Lights"
+               ReferencedContainer = "container:Lights.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "D802B9491A80564D00DA11A8"
+               BuildableName = "LightsTests.xctest"
+               BlueprintName = "LightsTests"
+               ReferencedContainer = "container:Lights.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "D86251FE1B02D88B00539301"
+               BuildableName = "LightKitTests.xctest"
+               BlueprintName = "LightKitTests"
                ReferencedContainer = "container:Lights.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -32,9 +60,19 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "D800EF7217DBD5A400573B68"
+               BlueprintIdentifier = "D802B9491A80564D00DA11A8"
                BuildableName = "LightsTests.xctest"
                BlueprintName = "LightsTests"
+               ReferencedContainer = "container:Lights.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "D86251FE1B02D88B00539301"
+               BuildableName = "LightKitTests.xctest"
+               BlueprintName = "LightKitTests"
                ReferencedContainer = "container:Lights.xcodeproj">
             </BuildableReference>
          </TestableReference>
@@ -42,7 +80,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "D800EF5717DBD5A400573B68"
+            BlueprintIdentifier = "D802B9341A80564D00DA11A8"
             BuildableName = "Lights.app"
             BlueprintName = "Lights"
             ReferencedContainer = "container:Lights.xcodeproj">
@@ -58,10 +96,11 @@
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
       allowLocationSimulation = "YES">
-      <BuildableProductRunnable>
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "D800EF5717DBD5A400573B68"
+            BlueprintIdentifier = "D802B9341A80564D00DA11A8"
             BuildableName = "Lights.app"
             BlueprintName = "Lights"
             ReferencedContainer = "container:Lights.xcodeproj">
@@ -76,10 +115,11 @@
       useCustomWorkingDirectory = "NO"
       buildConfiguration = "Release"
       debugDocumentVersioning = "YES">
-      <BuildableProductRunnable>
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "D800EF5717DBD5A400573B68"
+            BlueprintIdentifier = "D802B9341A80564D00DA11A8"
             BuildableName = "Lights.app"
             BlueprintName = "Lights"
             ReferencedContainer = "container:Lights.xcodeproj">

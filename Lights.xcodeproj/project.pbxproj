@@ -7,361 +7,785 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D800EF5C17DBD5A400573B68 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D800EF5B17DBD5A400573B68 /* Foundation.framework */; };
-		D800EF5E17DBD5A400573B68 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D800EF5D17DBD5A400573B68 /* CoreGraphics.framework */; };
-		D800EF6017DBD5A400573B68 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D800EF5F17DBD5A400573B68 /* UIKit.framework */; };
-		D800EF6617DBD5A400573B68 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D800EF6417DBD5A400573B68 /* InfoPlist.strings */; };
-		D800EF6817DBD5A400573B68 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D800EF6717DBD5A400573B68 /* main.m */; };
-		D800EF6C17DBD5A400573B68 /* LGAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D800EF6B17DBD5A400573B68 /* LGAppDelegate.m */; };
-		D800EF6E17DBD5A400573B68 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D800EF6D17DBD5A400573B68 /* Images.xcassets */; };
-		D800EF7517DBD5A400573B68 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D800EF7417DBD5A400573B68 /* XCTest.framework */; };
-		D800EF7617DBD5A400573B68 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D800EF5B17DBD5A400573B68 /* Foundation.framework */; };
-		D800EF7717DBD5A400573B68 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D800EF5F17DBD5A400573B68 /* UIKit.framework */; };
-		D800EF7F17DBD5A400573B68 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D800EF7D17DBD5A400573B68 /* InfoPlist.strings */; };
-		D800EF8117DBD5A400573B68 /* LightsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D800EF8017DBD5A400573B68 /* LightsTests.m */; };
-		D800EF8C17DBD5CE00573B68 /* LGViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D800EF8B17DBD5CE00573B68 /* LGViewController.m */; };
-		D800EF9F17DBDB3D00573B68 /* libicucore.A.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D800EF9E17DBDB3D00573B68 /* libicucore.A.dylib */; };
-		D800EFA117DBDB4600573B68 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D800EFA017DBDB4600573B68 /* CFNetwork.framework */; };
-		D800EFA317DBDB4C00573B68 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D800EFA217DBDB4C00573B68 /* Security.framework */; };
-		D82028EA18FCB7A20032DD05 /* LGPlotter.m in Sources */ = {isa = PBXBuildFile; fileRef = D82028E918FCB7A20032DD05 /* LGPlotter.m */; };
-		D82028EE18FCB9870032DD05 /* NBDirectionGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = D82028ED18FCB9870032DD05 /* NBDirectionGestureRecognizer.m */; };
-		D85A91C318E89CC90042C630 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D85A91C218E89CC90042C630 /* Settings.bundle */; };
-		D867723318FB5B16001908F7 /* LGOverlay.m in Sources */ = {isa = PBXBuildFile; fileRef = D867723218FB5B16001908F7 /* LGOverlay.m */; };
-		D8936C1418E35FEC007FF135 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8936C1318E35FEC007FF135 /* CoreLocation.framework */; };
-		D8936C1718E4AEF2007FF135 /* LGMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8936C1618E4AEF2007FF135 /* LGMapViewController.m */; };
-		D8B8964818FB3BFD00B95B80 /* LGLocationStore.m in Sources */ = {isa = PBXBuildFile; fileRef = D8B8964718FB3BFD00B95B80 /* LGLocationStore.m */; };
-		D8F1D9F217DD12FE003C14A3 /* UIBigSwitch.m in Sources */ = {isa = PBXBuildFile; fileRef = D8F1D9F117DD12FE003C14A3 /* UIBigSwitch.m */; };
+		D802B93B1A80564D00DA11A8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D802B93A1A80564D00DA11A8 /* AppDelegate.swift */; };
+		D802B93D1A80564D00DA11A8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D802B93C1A80564D00DA11A8 /* ViewController.swift */; };
+		D802B9421A80564D00DA11A8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D802B9411A80564D00DA11A8 /* Images.xcassets */; };
+		D802B9511A80564D00DA11A8 /* LightsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D802B9501A80564D00DA11A8 /* LightsTests.swift */; };
+		D802B95C1A80574A00DA11A8 /* Switch.swift in Sources */ = {isa = PBXBuildFile; fileRef = D802B95B1A80574A00DA11A8 /* Switch.swift */; };
+		D86251FA1B02D88B00539301 /* LightKit.h in Headers */ = {isa = PBXBuildFile; fileRef = D86251F91B02D88B00539301 /* LightKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D86252001B02D88B00539301 /* LightKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D86251F51B02D88B00539301 /* LightKit.framework */; };
+		D86252091B02D88B00539301 /* LightKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86252081B02D88B00539301 /* LightKitTests.swift */; };
+		D862520C1B02D88B00539301 /* LightKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D86251F51B02D88B00539301 /* LightKit.framework */; };
+		D862520D1B02D88B00539301 /* LightKit.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = D86251F51B02D88B00539301 /* LightKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D86252151B02D8C000539301 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86252141B02D8C000539301 /* API.swift */; };
+		D86252181B02DCB000539301 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8A28C901A88632B000C7D18 /* Alamofire.framework */; };
+		D888920E1A805BD700EE16F4 /* CGFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D888920D1A805BD700EE16F4 /* CGFunctions.swift */; };
+		D88892131A805BF000EE16F4 /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = D888920F1A805BF000EE16F4 /* JSON.swift */; };
+		D88892141A805BF000EE16F4 /* Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = D88892101A805BF000EE16F4 /* Layout.swift */; };
+		D88892151A805BF000EE16F4 /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = D88892111A805BF000EE16F4 /* Log.swift */; };
+		D88892161A805BF000EE16F4 /* Regex.swift in Sources */ = {isa = PBXBuildFile; fileRef = D88892121A805BF000EE16F4 /* Regex.swift */; };
+		D88D5E781AF317720048E976 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D88D5E771AF317720048E976 /* InterfaceController.swift */; };
+		D88D5E7A1AF317720048E976 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D88D5E791AF317720048E976 /* Images.xcassets */; };
+		D88D5E7E1AF317730048E976 /* Lights WatchKit App.app in Resources */ = {isa = PBXBuildFile; fileRef = D88D5E7D1AF317730048E976 /* Lights WatchKit App.app */; };
+		D88D5E861AF317730048E976 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D88D5E841AF317730048E976 /* Interface.storyboard */; };
+		D88D5E881AF317730048E976 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D88D5E871AF317730048E976 /* Images.xcassets */; };
+		D88D5E8B1AF317730048E976 /* Lights WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = D88D5E731AF317720048E976 /* Lights WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		D8A28C9A1A88636D000C7D18 /* Alamofire.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = D8A28C901A88632B000C7D18 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		D800EF7817DBD5A400573B68 /* PBXContainerItemProxy */ = {
+		D802B94B1A80564D00DA11A8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = D800EF5017DBD5A400573B68 /* Project object */;
+			containerPortal = D802B92D1A80564D00DA11A8 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = D800EF5717DBD5A400573B68;
+			remoteGlobalIDString = D802B9341A80564D00DA11A8;
 			remoteInfo = Lights;
+		};
+		D86252011B02D88B00539301 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D802B92D1A80564D00DA11A8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D86251F41B02D88B00539301;
+			remoteInfo = LightKit;
+		};
+		D86252031B02D88B00539301 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D802B92D1A80564D00DA11A8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D802B9341A80564D00DA11A8;
+			remoteInfo = Lights;
+		};
+		D862520A1B02D88B00539301 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D802B92D1A80564D00DA11A8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D86251F41B02D88B00539301;
+			remoteInfo = LightKit;
+		};
+		D86252191B02DCF300539301 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D8A28C881A88632B000C7D18 /* Alamofire.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = F8111E3219A95C8B0040E7D1;
+			remoteInfo = "Alamofire iOS";
+		};
+		D88D5E7F1AF317730048E976 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D802B92D1A80564D00DA11A8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D88D5E7C1AF317730048E976;
+			remoteInfo = "Lights WatchKit App";
+		};
+		D88D5E891AF317730048E976 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D802B92D1A80564D00DA11A8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D88D5E721AF317720048E976;
+			remoteInfo = "Lights WatchKit Extension";
+		};
+		D8A28C8F1A88632B000C7D18 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D8A28C881A88632B000C7D18 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F8111E3319A95C8B0040E7D1;
+			remoteInfo = "Alamofire iOS";
+		};
+		D8A28C911A88632B000C7D18 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D8A28C881A88632B000C7D18 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4DD67C0B1A5C55C900ED2280;
+			remoteInfo = "Alamofire OSX";
+		};
+		D8A28C931A88632B000C7D18 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D8A28C881A88632B000C7D18 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F8111E3E19A95C8B0040E7D1;
+			remoteInfo = "Alamofire iOS Tests";
+		};
+		D8A28C951A88632B000C7D18 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D8A28C881A88632B000C7D18 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F829C6B21A7A94F100A2CD59;
+			remoteInfo = "Alamofire OSX Tests";
+		};
+		D8A28C971A88634E000C7D18 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D8A28C881A88632B000C7D18 /* Alamofire.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = F8111E3219A95C8B0040E7D1;
+			remoteInfo = "Alamofire iOS";
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		D88D5E951AF317730048E976 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				D88D5E8B1AF317730048E976 /* Lights WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8A28C991A88635B000C7D18 /* Copy Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				D862520D1B02D88B00539301 /* LightKit.framework in Copy Frameworks */,
+				D8A28C9A1A88636D000C7D18 /* Alamofire.framework in Copy Frameworks */,
+			);
+			name = "Copy Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		D800EF5817DBD5A400573B68 /* Lights.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lights.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		D800EF5B17DBD5A400573B68 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		D800EF5D17DBD5A400573B68 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		D800EF5F17DBD5A400573B68 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		D800EF6317DBD5A400573B68 /* Lights-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Lights-Info.plist"; sourceTree = "<group>"; };
-		D800EF6517DBD5A400573B68 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		D800EF6717DBD5A400573B68 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		D800EF6917DBD5A400573B68 /* Lights-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Lights-Prefix.pch"; sourceTree = "<group>"; };
-		D800EF6A17DBD5A400573B68 /* LGAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LGAppDelegate.h; sourceTree = "<group>"; };
-		D800EF6B17DBD5A400573B68 /* LGAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LGAppDelegate.m; sourceTree = "<group>"; };
-		D800EF6D17DBD5A400573B68 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		D800EF7317DBD5A400573B68 /* LightsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LightsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		D800EF7417DBD5A400573B68 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		D800EF7C17DBD5A400573B68 /* LightsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LightsTests-Info.plist"; sourceTree = "<group>"; };
-		D800EF7E17DBD5A400573B68 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		D800EF8017DBD5A400573B68 /* LightsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LightsTests.m; sourceTree = "<group>"; };
-		D800EF8A17DBD5CE00573B68 /* LGViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGViewController.h; sourceTree = "<group>"; };
-		D800EF8B17DBD5CE00573B68 /* LGViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGViewController.m; sourceTree = "<group>"; };
-		D800EF9E17DBDB3D00573B68 /* libicucore.A.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.A.dylib; path = usr/lib/libicucore.A.dylib; sourceTree = SDKROOT; };
-		D800EFA017DBDB4600573B68 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
-		D800EFA217DBDB4C00573B68 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
-		D82028E818FCB7A20032DD05 /* LGPlotter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGPlotter.h; sourceTree = "<group>"; };
-		D82028E918FCB7A20032DD05 /* LGPlotter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGPlotter.m; sourceTree = "<group>"; };
-		D82028EC18FCB9870032DD05 /* NBDirectionGestureRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NBDirectionGestureRecognizer.h; sourceTree = "<group>"; };
-		D82028ED18FCB9870032DD05 /* NBDirectionGestureRecognizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NBDirectionGestureRecognizer.m; sourceTree = "<group>"; };
-		D85A91C218E89CC90042C630 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
-		D867723118FB5B16001908F7 /* LGOverlay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGOverlay.h; sourceTree = "<group>"; };
-		D867723218FB5B16001908F7 /* LGOverlay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGOverlay.m; sourceTree = "<group>"; };
-		D8936C1318E35FEC007FF135 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
-		D8936C1518E4AEF2007FF135 /* LGMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGMapViewController.h; sourceTree = "<group>"; };
-		D8936C1618E4AEF2007FF135 /* LGMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGMapViewController.m; sourceTree = "<group>"; };
-		D8B8964618FB3BFD00B95B80 /* LGLocationStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGLocationStore.h; sourceTree = "<group>"; };
-		D8B8964718FB3BFD00B95B80 /* LGLocationStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGLocationStore.m; sourceTree = "<group>"; };
-		D8F1D9F017DD12FE003C14A3 /* UIBigSwitch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIBigSwitch.h; sourceTree = "<group>"; };
-		D8F1D9F117DD12FE003C14A3 /* UIBigSwitch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIBigSwitch.m; sourceTree = "<group>"; };
+		D802B9351A80564D00DA11A8 /* Lights.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lights.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D802B9391A80564D00DA11A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D802B93A1A80564D00DA11A8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D802B93C1A80564D00DA11A8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D802B9411A80564D00DA11A8 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		D802B94A1A80564D00DA11A8 /* LightsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LightsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D802B94F1A80564D00DA11A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D802B9501A80564D00DA11A8 /* LightsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightsTests.swift; sourceTree = "<group>"; };
+		D802B95B1A80574A00DA11A8 /* Switch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Switch.swift; sourceTree = "<group>"; };
+		D86251F51B02D88B00539301 /* LightKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LightKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D86251F81B02D88B00539301 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D86251F91B02D88B00539301 /* LightKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LightKit.h; sourceTree = "<group>"; };
+		D86251FF1B02D88B00539301 /* LightKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LightKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D86252071B02D88B00539301 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D86252081B02D88B00539301 /* LightKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightKitTests.swift; sourceTree = "<group>"; };
+		D86252141B02D8C000539301 /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		D862521E1B03110F00539301 /* Lights.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Lights.entitlements; sourceTree = "<group>"; };
+		D862521F1B03112900539301 /* Lights WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Lights WatchKit Extension.entitlements"; sourceTree = "<group>"; };
+		D888920D1A805BD700EE16F4 /* CGFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CGFunctions.swift; path = Vendor/NBKit/NBKit/NBKit/CGFunctions.swift; sourceTree = SOURCE_ROOT; };
+		D888920F1A805BF000EE16F4 /* JSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JSON.swift; path = Vendor/NBKit/NBKit/NBKit/JSON.swift; sourceTree = SOURCE_ROOT; };
+		D88892101A805BF000EE16F4 /* Layout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Layout.swift; path = Vendor/NBKit/NBKit/NBKit/Layout.swift; sourceTree = SOURCE_ROOT; };
+		D88892111A805BF000EE16F4 /* Log.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Log.swift; path = Vendor/NBKit/NBKit/NBKit/Log.swift; sourceTree = SOURCE_ROOT; };
+		D88892121A805BF000EE16F4 /* Regex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Regex.swift; path = Vendor/NBKit/NBKit/NBKit/Regex.swift; sourceTree = SOURCE_ROOT; };
+		D88D5E731AF317720048E976 /* Lights WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Lights WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D88D5E761AF317720048E976 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D88D5E771AF317720048E976 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		D88D5E791AF317720048E976 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		D88D5E7D1AF317730048E976 /* Lights WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Lights WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D88D5E831AF317730048E976 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D88D5E851AF317730048E976 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		D88D5E871AF317730048E976 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		D8A28C881A88632B000C7D18 /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = Vendor/Alamofire/Alamofire.xcodeproj; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		D800EF5517DBD5A400573B68 /* Frameworks */ = {
+		D802B9321A80564D00DA11A8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D8936C1418E35FEC007FF135 /* CoreLocation.framework in Frameworks */,
-				D800EFA317DBDB4C00573B68 /* Security.framework in Frameworks */,
-				D800EFA117DBDB4600573B68 /* CFNetwork.framework in Frameworks */,
-				D800EF9F17DBDB3D00573B68 /* libicucore.A.dylib in Frameworks */,
-				D800EF5E17DBD5A400573B68 /* CoreGraphics.framework in Frameworks */,
-				D800EF6017DBD5A400573B68 /* UIKit.framework in Frameworks */,
-				D800EF5C17DBD5A400573B68 /* Foundation.framework in Frameworks */,
+				D862520C1B02D88B00539301 /* LightKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D800EF7017DBD5A400573B68 /* Frameworks */ = {
+		D802B9471A80564D00DA11A8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D800EF7517DBD5A400573B68 /* XCTest.framework in Frameworks */,
-				D800EF7717DBD5A400573B68 /* UIKit.framework in Frameworks */,
-				D800EF7617DBD5A400573B68 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D86251F11B02D88B00539301 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D86252181B02DCB000539301 /* Alamofire.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D86251FC1B02D88B00539301 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D86252001B02D88B00539301 /* LightKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D88D5E701AF317720048E976 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		D800EF4F17DBD5A400573B68 = {
+		D802B92C1A80564D00DA11A8 = {
 			isa = PBXGroup;
 			children = (
-				D800EF6117DBD5A400573B68 /* Lights */,
-				D800EF7A17DBD5A400573B68 /* LightsTests */,
-				D800EF5A17DBD5A400573B68 /* Frameworks */,
-				D800EF5917DBD5A400573B68 /* Products */,
+				D802B9371A80564D00DA11A8 /* Lights */,
+				D802B94D1A80564D00DA11A8 /* LightsTests */,
+				D88D5E741AF317720048E976 /* Lights WatchKit Extension */,
+				D88D5E811AF317730048E976 /* Lights WatchKit App */,
+				D86251F61B02D88B00539301 /* LightKit */,
+				D86252051B02D88B00539301 /* LightKitTests */,
+				D802B9361A80564D00DA11A8 /* Products */,
+				D888920B1A805BC000EE16F4 /* Vendor */,
 			);
 			sourceTree = "<group>";
 		};
-		D800EF5917DBD5A400573B68 /* Products */ = {
+		D802B9361A80564D00DA11A8 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D800EF5817DBD5A400573B68 /* Lights.app */,
-				D800EF7317DBD5A400573B68 /* LightsTests.xctest */,
+				D802B9351A80564D00DA11A8 /* Lights.app */,
+				D802B94A1A80564D00DA11A8 /* LightsTests.xctest */,
+				D88D5E731AF317720048E976 /* Lights WatchKit Extension.appex */,
+				D88D5E7D1AF317730048E976 /* Lights WatchKit App.app */,
+				D86251F51B02D88B00539301 /* LightKit.framework */,
+				D86251FF1B02D88B00539301 /* LightKitTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		D800EF5A17DBD5A400573B68 /* Frameworks */ = {
+		D802B9371A80564D00DA11A8 /* Lights */ = {
 			isa = PBXGroup;
 			children = (
-				D8936C1318E35FEC007FF135 /* CoreLocation.framework */,
-				D800EF9E17DBDB3D00573B68 /* libicucore.A.dylib */,
-				D800EFA217DBDB4C00573B68 /* Security.framework */,
-				D800EFA017DBDB4600573B68 /* CFNetwork.framework */,
-				D800EF5B17DBD5A400573B68 /* Foundation.framework */,
-				D800EF5D17DBD5A400573B68 /* CoreGraphics.framework */,
-				D800EF5F17DBD5A400573B68 /* UIKit.framework */,
-				D800EF7417DBD5A400573B68 /* XCTest.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		D800EF6117DBD5A400573B68 /* Lights */ = {
-			isa = PBXGroup;
-			children = (
-				D82028EB18FCB9690032DD05 /* NBKit */,
-				D8F1D9F317DD620A003C14A3 /* UI Elements */,
-				D800EF6A17DBD5A400573B68 /* LGAppDelegate.h */,
-				D800EF6B17DBD5A400573B68 /* LGAppDelegate.m */,
-				D800EF6D17DBD5A400573B68 /* Images.xcassets */,
-				D800EF6217DBD5A400573B68 /* Supporting Files */,
-				D800EF8A17DBD5CE00573B68 /* LGViewController.h */,
-				D800EF8B17DBD5CE00573B68 /* LGViewController.m */,
-				D8936C1518E4AEF2007FF135 /* LGMapViewController.h */,
-				D8936C1618E4AEF2007FF135 /* LGMapViewController.m */,
-				D8B8964618FB3BFD00B95B80 /* LGLocationStore.h */,
-				D8B8964718FB3BFD00B95B80 /* LGLocationStore.m */,
+				D862521E1B03110F00539301 /* Lights.entitlements */,
+				D802B95A1A80573B00DA11A8 /* Views */,
+				D802B93A1A80564D00DA11A8 /* AppDelegate.swift */,
+				D802B93C1A80564D00DA11A8 /* ViewController.swift */,
+				D802B9411A80564D00DA11A8 /* Images.xcassets */,
+				D802B9381A80564D00DA11A8 /* Supporting Files */,
 			);
 			path = Lights;
 			sourceTree = "<group>";
 		};
-		D800EF6217DBD5A400573B68 /* Supporting Files */ = {
+		D802B9381A80564D00DA11A8 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				D800EF6317DBD5A400573B68 /* Lights-Info.plist */,
-				D85A91C218E89CC90042C630 /* Settings.bundle */,
-				D800EF6417DBD5A400573B68 /* InfoPlist.strings */,
-				D800EF6717DBD5A400573B68 /* main.m */,
-				D800EF6917DBD5A400573B68 /* Lights-Prefix.pch */,
+				D802B9391A80564D00DA11A8 /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		D800EF7A17DBD5A400573B68 /* LightsTests */ = {
+		D802B94D1A80564D00DA11A8 /* LightsTests */ = {
 			isa = PBXGroup;
 			children = (
-				D800EF8017DBD5A400573B68 /* LightsTests.m */,
-				D800EF7B17DBD5A400573B68 /* Supporting Files */,
+				D802B9501A80564D00DA11A8 /* LightsTests.swift */,
+				D802B94E1A80564D00DA11A8 /* Supporting Files */,
 			);
 			path = LightsTests;
 			sourceTree = "<group>";
 		};
-		D800EF7B17DBD5A400573B68 /* Supporting Files */ = {
+		D802B94E1A80564D00DA11A8 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				D800EF7C17DBD5A400573B68 /* LightsTests-Info.plist */,
-				D800EF7D17DBD5A400573B68 /* InfoPlist.strings */,
+				D802B94F1A80564D00DA11A8 /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		D82028EB18FCB9690032DD05 /* NBKit */ = {
+		D802B95A1A80573B00DA11A8 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				D82028EC18FCB9870032DD05 /* NBDirectionGestureRecognizer.h */,
-				D82028ED18FCB9870032DD05 /* NBDirectionGestureRecognizer.m */,
+				D802B95B1A80574A00DA11A8 /* Switch.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		D86251F61B02D88B00539301 /* LightKit */ = {
+			isa = PBXGroup;
+			children = (
+				D86251F91B02D88B00539301 /* LightKit.h */,
+				D86251F71B02D88B00539301 /* Supporting Files */,
+				D86252141B02D8C000539301 /* API.swift */,
+			);
+			path = LightKit;
+			sourceTree = "<group>";
+		};
+		D86251F71B02D88B00539301 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D86251F81B02D88B00539301 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D86252051B02D88B00539301 /* LightKitTests */ = {
+			isa = PBXGroup;
+			children = (
+				D86252081B02D88B00539301 /* LightKitTests.swift */,
+				D86252061B02D88B00539301 /* Supporting Files */,
+			);
+			path = LightKitTests;
+			sourceTree = "<group>";
+		};
+		D86252061B02D88B00539301 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D86252071B02D88B00539301 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D888920B1A805BC000EE16F4 /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				D8A28C881A88632B000C7D18 /* Alamofire.xcodeproj */,
+				D888920C1A805BCA00EE16F4 /* NBKit */,
+			);
+			name = Vendor;
+			path = Lights;
+			sourceTree = "<group>";
+		};
+		D888920C1A805BCA00EE16F4 /* NBKit */ = {
+			isa = PBXGroup;
+			children = (
+				D888920F1A805BF000EE16F4 /* JSON.swift */,
+				D88892101A805BF000EE16F4 /* Layout.swift */,
+				D88892111A805BF000EE16F4 /* Log.swift */,
+				D88892121A805BF000EE16F4 /* Regex.swift */,
+				D888920D1A805BD700EE16F4 /* CGFunctions.swift */,
 			);
 			name = NBKit;
 			sourceTree = "<group>";
 		};
-		D8F1D9F317DD620A003C14A3 /* UI Elements */ = {
+		D88D5E741AF317720048E976 /* Lights WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
-				D8F1D9F017DD12FE003C14A3 /* UIBigSwitch.h */,
-				D8F1D9F117DD12FE003C14A3 /* UIBigSwitch.m */,
-				D867723118FB5B16001908F7 /* LGOverlay.h */,
-				D867723218FB5B16001908F7 /* LGOverlay.m */,
-				D82028E818FCB7A20032DD05 /* LGPlotter.h */,
-				D82028E918FCB7A20032DD05 /* LGPlotter.m */,
+				D862521F1B03112900539301 /* Lights WatchKit Extension.entitlements */,
+				D88D5E771AF317720048E976 /* InterfaceController.swift */,
+				D88D5E791AF317720048E976 /* Images.xcassets */,
+				D88D5E751AF317720048E976 /* Supporting Files */,
 			);
-			name = "UI Elements";
+			path = "Lights WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		D88D5E751AF317720048E976 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D88D5E761AF317720048E976 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D88D5E811AF317730048E976 /* Lights WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				D88D5E841AF317730048E976 /* Interface.storyboard */,
+				D88D5E871AF317730048E976 /* Images.xcassets */,
+				D88D5E821AF317730048E976 /* Supporting Files */,
+			);
+			path = "Lights WatchKit App";
+			sourceTree = "<group>";
+		};
+		D88D5E821AF317730048E976 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D88D5E831AF317730048E976 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D8A28C891A88632B000C7D18 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D8A28C901A88632B000C7D18 /* Alamofire.framework */,
+				D8A28C921A88632B000C7D18 /* Alamofire.framework */,
+				D8A28C941A88632B000C7D18 /* Alamofire iOS Tests.xctest */,
+				D8A28C961A88632B000C7D18 /* Alamofire OSX Tests.xctest */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		D86251F21B02D88B00539301 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D86251FA1B02D88B00539301 /* LightKit.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
-		D800EF5717DBD5A400573B68 /* Lights */ = {
+		D802B9341A80564D00DA11A8 /* Lights */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D800EF8417DBD5A400573B68 /* Build configuration list for PBXNativeTarget "Lights" */;
+			buildConfigurationList = D802B9541A80564D00DA11A8 /* Build configuration list for PBXNativeTarget "Lights" */;
 			buildPhases = (
-				D800EF5417DBD5A400573B68 /* Sources */,
-				D800EF5517DBD5A400573B68 /* Frameworks */,
-				D800EF5617DBD5A400573B68 /* Resources */,
+				D802B9311A80564D00DA11A8 /* Sources */,
+				D802B9321A80564D00DA11A8 /* Frameworks */,
+				D802B9331A80564D00DA11A8 /* Resources */,
+				D8A28C991A88635B000C7D18 /* Copy Frameworks */,
+				D88D5E951AF317730048E976 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				D8A28C981A88634E000C7D18 /* PBXTargetDependency */,
+				D88D5E8A1AF317730048E976 /* PBXTargetDependency */,
+				D862520B1B02D88B00539301 /* PBXTargetDependency */,
 			);
 			name = Lights;
 			productName = Lights;
-			productReference = D800EF5817DBD5A400573B68 /* Lights.app */;
+			productReference = D802B9351A80564D00DA11A8 /* Lights.app */;
 			productType = "com.apple.product-type.application";
 		};
-		D800EF7217DBD5A400573B68 /* LightsTests */ = {
+		D802B9491A80564D00DA11A8 /* LightsTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D800EF8717DBD5A400573B68 /* Build configuration list for PBXNativeTarget "LightsTests" */;
+			buildConfigurationList = D802B9571A80564D00DA11A8 /* Build configuration list for PBXNativeTarget "LightsTests" */;
 			buildPhases = (
-				D800EF6F17DBD5A400573B68 /* Sources */,
-				D800EF7017DBD5A400573B68 /* Frameworks */,
-				D800EF7117DBD5A400573B68 /* Resources */,
+				D802B9461A80564D00DA11A8 /* Sources */,
+				D802B9471A80564D00DA11A8 /* Frameworks */,
+				D802B9481A80564D00DA11A8 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				D800EF7917DBD5A400573B68 /* PBXTargetDependency */,
+				D802B94C1A80564D00DA11A8 /* PBXTargetDependency */,
 			);
 			name = LightsTests;
 			productName = LightsTests;
-			productReference = D800EF7317DBD5A400573B68 /* LightsTests.xctest */;
+			productReference = D802B94A1A80564D00DA11A8 /* LightsTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D86251F41B02D88B00539301 /* LightKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D862520E1B02D88B00539301 /* Build configuration list for PBXNativeTarget "LightKit" */;
+			buildPhases = (
+				D86251F01B02D88B00539301 /* Sources */,
+				D86251F11B02D88B00539301 /* Frameworks */,
+				D86251F21B02D88B00539301 /* Headers */,
+				D86251F31B02D88B00539301 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D862521A1B02DCF300539301 /* PBXTargetDependency */,
+			);
+			name = LightKit;
+			productName = LightKit;
+			productReference = D86251F51B02D88B00539301 /* LightKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D86251FE1B02D88B00539301 /* LightKitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D86252111B02D88B00539301 /* Build configuration list for PBXNativeTarget "LightKitTests" */;
+			buildPhases = (
+				D86251FB1B02D88B00539301 /* Sources */,
+				D86251FC1B02D88B00539301 /* Frameworks */,
+				D86251FD1B02D88B00539301 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D86252021B02D88B00539301 /* PBXTargetDependency */,
+				D86252041B02D88B00539301 /* PBXTargetDependency */,
+			);
+			name = LightKitTests;
+			productName = LightKitTests;
+			productReference = D86251FF1B02D88B00539301 /* LightKitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D88D5E721AF317720048E976 /* Lights WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D88D5E941AF317730048E976 /* Build configuration list for PBXNativeTarget "Lights WatchKit Extension" */;
+			buildPhases = (
+				D88D5E6F1AF317720048E976 /* Sources */,
+				D88D5E701AF317720048E976 /* Frameworks */,
+				D88D5E711AF317720048E976 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D88D5E801AF317730048E976 /* PBXTargetDependency */,
+			);
+			name = "Lights WatchKit Extension";
+			productName = "Lights WatchKit Extension";
+			productReference = D88D5E731AF317720048E976 /* Lights WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit-extension";
+		};
+		D88D5E7C1AF317730048E976 /* Lights WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D88D5E931AF317730048E976 /* Build configuration list for PBXNativeTarget "Lights WatchKit App" */;
+			buildPhases = (
+				D88D5E7B1AF317730048E976 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Lights WatchKit App";
+			productName = "Lights WatchKit App";
+			productReference = D88D5E7D1AF317730048E976 /* Lights WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		D800EF5017DBD5A400573B68 /* Project object */ = {
+		D802B92D1A80564D00DA11A8 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				CLASSPREFIX = LG;
-				LastUpgradeCheck = 0500;
+				LastUpgradeCheck = 0620;
 				ORGANIZATIONNAME = "Nathan Borror";
 				TargetAttributes = {
-					D800EF7217DBD5A400573B68 = {
-						TestTargetID = D800EF5717DBD5A400573B68;
+					D802B9341A80564D00DA11A8 = {
+						CreatedOnToolsVersion = 6.2;
+						DevelopmentTeam = 294VZ3T33E;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					D802B9491A80564D00DA11A8 = {
+						CreatedOnToolsVersion = 6.2;
+						TestTargetID = D802B9341A80564D00DA11A8;
+					};
+					D86251F41B02D88B00539301 = {
+						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = 294VZ3T33E;
+					};
+					D86251FE1B02D88B00539301 = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = D802B9341A80564D00DA11A8;
+					};
+					D88D5E721AF317720048E976 = {
+						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = 294VZ3T33E;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					D88D5E7C1AF317730048E976 = {
+						CreatedOnToolsVersion = 6.4;
 					};
 				};
 			};
-			buildConfigurationList = D800EF5317DBD5A400573B68 /* Build configuration list for PBXProject "Lights" */;
+			buildConfigurationList = D802B9301A80564D00DA11A8 /* Build configuration list for PBXProject "Lights" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
-			mainGroup = D800EF4F17DBD5A400573B68;
-			productRefGroup = D800EF5917DBD5A400573B68 /* Products */;
+			mainGroup = D802B92C1A80564D00DA11A8;
+			productRefGroup = D802B9361A80564D00DA11A8 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = D8A28C891A88632B000C7D18 /* Products */;
+					ProjectRef = D8A28C881A88632B000C7D18 /* Alamofire.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
-				D800EF5717DBD5A400573B68 /* Lights */,
-				D800EF7217DBD5A400573B68 /* LightsTests */,
+				D802B9341A80564D00DA11A8 /* Lights */,
+				D802B9491A80564D00DA11A8 /* LightsTests */,
+				D86251F41B02D88B00539301 /* LightKit */,
+				D86251FE1B02D88B00539301 /* LightKitTests */,
+				D88D5E721AF317720048E976 /* Lights WatchKit Extension */,
+				D88D5E7C1AF317730048E976 /* Lights WatchKit App */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		D8A28C901A88632B000C7D18 /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = D8A28C8F1A88632B000C7D18 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D8A28C921A88632B000C7D18 /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = D8A28C911A88632B000C7D18 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D8A28C941A88632B000C7D18 /* Alamofire iOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Alamofire iOS Tests.xctest";
+			remoteRef = D8A28C931A88632B000C7D18 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D8A28C961A88632B000C7D18 /* Alamofire OSX Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Alamofire OSX Tests.xctest";
+			remoteRef = D8A28C951A88632B000C7D18 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
-		D800EF5617DBD5A400573B68 /* Resources */ = {
+		D802B9331A80564D00DA11A8 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D800EF6617DBD5A400573B68 /* InfoPlist.strings in Resources */,
-				D85A91C318E89CC90042C630 /* Settings.bundle in Resources */,
-				D800EF6E17DBD5A400573B68 /* Images.xcassets in Resources */,
+				D802B9421A80564D00DA11A8 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D800EF7117DBD5A400573B68 /* Resources */ = {
+		D802B9481A80564D00DA11A8 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D800EF7F17DBD5A400573B68 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D86251F31B02D88B00539301 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D86251FD1B02D88B00539301 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D88D5E711AF317720048E976 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D88D5E7A1AF317720048E976 /* Images.xcassets in Resources */,
+				D88D5E7E1AF317730048E976 /* Lights WatchKit App.app in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D88D5E7B1AF317730048E976 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D88D5E861AF317730048E976 /* Interface.storyboard in Resources */,
+				D88D5E881AF317730048E976 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		D800EF5417DBD5A400573B68 /* Sources */ = {
+		D802B9311A80564D00DA11A8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D800EF6817DBD5A400573B68 /* main.m in Sources */,
-				D82028EA18FCB7A20032DD05 /* LGPlotter.m in Sources */,
-				D800EF6C17DBD5A400573B68 /* LGAppDelegate.m in Sources */,
-				D800EF8C17DBD5CE00573B68 /* LGViewController.m in Sources */,
-				D867723318FB5B16001908F7 /* LGOverlay.m in Sources */,
-				D8F1D9F217DD12FE003C14A3 /* UIBigSwitch.m in Sources */,
-				D82028EE18FCB9870032DD05 /* NBDirectionGestureRecognizer.m in Sources */,
-				D8936C1718E4AEF2007FF135 /* LGMapViewController.m in Sources */,
-				D8B8964818FB3BFD00B95B80 /* LGLocationStore.m in Sources */,
+				D802B95C1A80574A00DA11A8 /* Switch.swift in Sources */,
+				D88892161A805BF000EE16F4 /* Regex.swift in Sources */,
+				D88892151A805BF000EE16F4 /* Log.swift in Sources */,
+				D88892131A805BF000EE16F4 /* JSON.swift in Sources */,
+				D802B93D1A80564D00DA11A8 /* ViewController.swift in Sources */,
+				D802B93B1A80564D00DA11A8 /* AppDelegate.swift in Sources */,
+				D888920E1A805BD700EE16F4 /* CGFunctions.swift in Sources */,
+				D88892141A805BF000EE16F4 /* Layout.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D800EF6F17DBD5A400573B68 /* Sources */ = {
+		D802B9461A80564D00DA11A8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D800EF8117DBD5A400573B68 /* LightsTests.m in Sources */,
+				D802B9511A80564D00DA11A8 /* LightsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D86251F01B02D88B00539301 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D86252151B02D8C000539301 /* API.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D86251FB1B02D88B00539301 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D86252091B02D88B00539301 /* LightKitTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D88D5E6F1AF317720048E976 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D88D5E781AF317720048E976 /* InterfaceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		D800EF7917DBD5A400573B68 /* PBXTargetDependency */ = {
+		D802B94C1A80564D00DA11A8 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = D800EF5717DBD5A400573B68 /* Lights */;
-			targetProxy = D800EF7817DBD5A400573B68 /* PBXContainerItemProxy */;
+			target = D802B9341A80564D00DA11A8 /* Lights */;
+			targetProxy = D802B94B1A80564D00DA11A8 /* PBXContainerItemProxy */;
+		};
+		D86252021B02D88B00539301 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D86251F41B02D88B00539301 /* LightKit */;
+			targetProxy = D86252011B02D88B00539301 /* PBXContainerItemProxy */;
+		};
+		D86252041B02D88B00539301 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D802B9341A80564D00DA11A8 /* Lights */;
+			targetProxy = D86252031B02D88B00539301 /* PBXContainerItemProxy */;
+		};
+		D862520B1B02D88B00539301 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D86251F41B02D88B00539301 /* LightKit */;
+			targetProxy = D862520A1B02D88B00539301 /* PBXContainerItemProxy */;
+		};
+		D862521A1B02DCF300539301 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Alamofire iOS";
+			targetProxy = D86252191B02DCF300539301 /* PBXContainerItemProxy */;
+		};
+		D88D5E801AF317730048E976 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D88D5E7C1AF317730048E976 /* Lights WatchKit App */;
+			targetProxy = D88D5E7F1AF317730048E976 /* PBXContainerItemProxy */;
+		};
+		D88D5E8A1AF317730048E976 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D88D5E721AF317720048E976 /* Lights WatchKit Extension */;
+			targetProxy = D88D5E891AF317730048E976 /* PBXContainerItemProxy */;
+		};
+		D8A28C981A88634E000C7D18 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Alamofire iOS";
+			targetProxy = D8A28C971A88634E000C7D18 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		D800EF6417DBD5A400573B68 /* InfoPlist.strings */ = {
+		D88D5E841AF317730048E976 /* Interface.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				D800EF6517DBD5A400573B68 /* en */,
+				D88D5E851AF317730048E976 /* Base */,
 			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		D800EF7D17DBD5A400573B68 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D800EF7E17DBD5A400573B68 /* en */,
-			);
-			name = InfoPlist.strings;
+			name = Interface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		D800EF8217DBD5A400573B68 /* Debug */ = {
+		D802B9521A80564D00DA11A8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -376,9 +800,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -387,18 +813,22 @@
 					"$(inherited)",
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		D800EF8317DBD5A400573B68 /* Release */ = {
+		D802B9531A80564D00DA11A8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -413,131 +843,325 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = YES;
+				COPY_PHASE_STRIP = NO;
 				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		D800EF8517DBD5A400573B68 /* Debug */ = {
+		D802B9551A80564D00DA11A8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					/Users/nathan/Dropbox/Work/Personal/Lights,
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Lights/Lights-Prefix.pch";
-				INFOPLIST_FILE = "Lights/Lights-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				CODE_SIGN_ENTITLEMENTS = Lights/Lights.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = Lights/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = app;
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
-		D800EF8617DBD5A400573B68 /* Release */ = {
+		D802B9561A80564D00DA11A8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					/Users/nathan/Dropbox/Work/Personal/Lights,
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Lights/Lights-Prefix.pch";
-				INFOPLIST_FILE = "Lights/Lights-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				CODE_SIGN_ENTITLEMENTS = Lights/Lights.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = Lights/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = app;
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
-		D800EF8817DBD5A400573B68 /* Debug */ = {
+		D802B9581A80564D00DA11A8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Lights.app/Lights";
+				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Lights/Lights-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "LightsTests/LightsTests-Info.plist";
+				INFOPLIST_FILE = LightsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Lights.app/Lights";
 			};
 			name = Debug;
 		};
-		D800EF8917DBD5A400573B68 /* Release */ = {
+		D802B9591A80564D00DA11A8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Lights.app/Lights";
+				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Lights/Lights-Prefix.pch";
-				INFOPLIST_FILE = "LightsTests/LightsTests-Info.plist";
+				INFOPLIST_FILE = LightsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Lights.app/Lights";
+			};
+			name = Release;
+		};
+		D862520F1B02D88B00539301 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = LightKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D86252101B02D88B00539301 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = LightKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D86252121B02D88B00539301 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = LightKitTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Lights.app/Lights";
+			};
+			name = Debug;
+		};
+		D86252131B02D88B00539301 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = LightKitTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Lights.app/Lights";
+			};
+			name = Release;
+		};
+		D88D5E8C1AF317730048E976 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Lights WatchKit Extension/Lights WatchKit Extension.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Lights WatchKit Extension/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		D88D5E8D1AF317730048E976 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Lights WatchKit Extension/Lights WatchKit Extension.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Lights WatchKit Extension/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		D88D5E8E1AF317730048E976 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IBSC_MODULE = Lights_WatchKit_Extension;
+				INFOPLIST_FILE = "Lights WatchKit App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Debug;
+		};
+		D88D5E8F1AF317730048E976 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_NO_COMMON_BLOCKS = YES;
+				IBSC_MODULE = Lights_WatchKit_Extension;
+				INFOPLIST_FILE = "Lights WatchKit App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D800EF5317DBD5A400573B68 /* Build configuration list for PBXProject "Lights" */ = {
+		D802B9301A80564D00DA11A8 /* Build configuration list for PBXProject "Lights" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D800EF8217DBD5A400573B68 /* Debug */,
-				D800EF8317DBD5A400573B68 /* Release */,
+				D802B9521A80564D00DA11A8 /* Debug */,
+				D802B9531A80564D00DA11A8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D800EF8417DBD5A400573B68 /* Build configuration list for PBXNativeTarget "Lights" */ = {
+		D802B9541A80564D00DA11A8 /* Build configuration list for PBXNativeTarget "Lights" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D800EF8517DBD5A400573B68 /* Debug */,
-				D800EF8617DBD5A400573B68 /* Release */,
+				D802B9551A80564D00DA11A8 /* Debug */,
+				D802B9561A80564D00DA11A8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D800EF8717DBD5A400573B68 /* Build configuration list for PBXNativeTarget "LightsTests" */ = {
+		D802B9571A80564D00DA11A8 /* Build configuration list for PBXNativeTarget "LightsTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D800EF8817DBD5A400573B68 /* Debug */,
-				D800EF8917DBD5A400573B68 /* Release */,
+				D802B9581A80564D00DA11A8 /* Debug */,
+				D802B9591A80564D00DA11A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D862520E1B02D88B00539301 /* Build configuration list for PBXNativeTarget "LightKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D862520F1B02D88B00539301 /* Debug */,
+				D86252101B02D88B00539301 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D86252111B02D88B00539301 /* Build configuration list for PBXNativeTarget "LightKitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D86252121B02D88B00539301 /* Debug */,
+				D86252131B02D88B00539301 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D88D5E931AF317730048E976 /* Build configuration list for PBXNativeTarget "Lights WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D88D5E8E1AF317730048E976 /* Debug */,
+				D88D5E8F1AF317730048E976 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D88D5E941AF317730048E976 /* Build configuration list for PBXNativeTarget "Lights WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D88D5E8C1AF317730048E976 /* Debug */,
+				D88D5E8D1AF317730048E976 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = D800EF5017DBD5A400573B68 /* Project object */;
+	rootObject = D802B92D1A80564D00DA11A8 /* Project object */;
 }

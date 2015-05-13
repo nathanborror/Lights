@@ -4,6 +4,16 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>LightKit.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>4</integer>
+		</dict>
+		<key>Lights WatchKit App.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
 		<key>Lights.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -12,12 +22,27 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>D800EF5717DBD5A400573B68</key>
+		<key>D802B9341A80564D00DA11A8</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>D800EF7217DBD5A400573B68</key>
+		<key>D802B9491A80564D00DA11A8</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D86251F41B02D88B00539301</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D86251FE1B02D88B00539301</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D88D5E7C1AF317730048E976</key>
 		<dict>
 			<key>primary</key>
 			<true/>
